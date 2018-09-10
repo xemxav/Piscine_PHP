@@ -1,0 +1,51 @@
+
+nav > ul {
+	margin :0px;
+	padding :0px
+}
+
+nav > ul > li {
+	float:left;
+	position: relative;
+}
+
+nav li {
+	list-style-type: none;
+}
+
+.submenu {
+	display :none;
+}
+
+li:hover .submenu {
+	display: inline-block;
+	position: absolute;
+	top :100%;
+	left :0px;
+	padding :0px;
+	z-index:100000;
+}
+
+ul::after {
+	content: "";
+	display :block;
+	clear :both;
+}
+
+
+
+.submenu li {
+	border-bottom: 1px solid #ccc;
+}
+
+.submenu li {
+	padding: 15px 30px;
+	font-size :13px;
+	color:yellow;
+	width:270px;
+}
+
+.niveau_un:hover{
+	border-top: 5px solid red;
+	background-color:pink;
+}
