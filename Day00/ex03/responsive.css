@@ -1,0 +1,41 @@
+.pic {width: 50vw;}
+.a_numb {text-align: left;}
+
+.symbol {text-align: center;}
+
+.density {text-align: right}
+
+.container {overflow-x: auto;
+	overflow-y: auto;	
+}
+td {
+	border: 1px solid black;
+	size : 100%;
+}
+p {
+	margin : 0px;
+}
+
+.noble {background: cyan}
+
+.alcanins {background: coral}
+
+.earth_alcanins {background : beige}
+
+.metalloides {background : rgb(95, 89, 30)}
+
+.not_metal {background : rgb(199, 248, 125)}
+
+.halogens {background : yellow}
+
+.poor_metal {background : gray}
+
+.trans_metal {background : pink}
+
+.lanthanides {background : purple}
+
+.actinides {background : plum}
+
+.synth {background : lightgrey}
+
+.no_border {border:transparent}

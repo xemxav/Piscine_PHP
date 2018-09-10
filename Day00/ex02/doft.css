@@ -1,7 +1,190 @@
 body {
-	background: grey;
+	background: #505050;
 }
 
-/*
-Creer des div = creer un block
-*/
+div {
+	border-radius: 10px;
+	box-shadow : 8px 8px 8px black ;
+	background : #909090;
+
+}
+
+.header {
+	width : 1420px;
+	margin-top: 50px;
+	margin-bottom : 20px;
+	height: 140px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.logo {
+	height: 100px;
+	margin-top: 20px;
+	position: absolute;
+}
+
+.mglass {
+	margin-top:20px;
+	margin-left: 1140px;
+	position: absolute;
+}
+
+.close {
+	height: 20px;
+	width: 20px;
+	margin-left: 1390px;
+	position: absolute;
+	margin-top:110px;
+}
+
+.reload {
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	margin-left: 1390px;
+	margin-top : 10px;
+}
+
+.container {
+	width : 1370px;
+	height: 600px;
+	margin : auto;
+}
+
+.left {
+	width : 140px;
+	height: 420px;
+	align-content: center;
+	position: absolute;
+}
+
+.Avancer {
+	height: 60px;
+	width: 60px;
+	display: block;
+	margin:auto;
+	margin-top:15px;
+
+}
+
+.Prendre {
+	height: 60px;
+	width: 60px;
+	display: block;
+	margin:auto;
+	margin-top:15px;
+}
+
+.Regarder {
+	height: 60px;
+	width: 60px;
+	display: block;
+	margin:auto;
+	margin-top:15px;
+	border: 3px solid red;
+	border-radius: 5px;
+}
+
+.Utiliser {
+	height: 60px;
+	width: 60px;
+	display: block;
+	margin:auto;
+	margin-top:15px;
+}
+
+.Parler {
+	height: 60px;
+	width: 60px;
+	display: block;
+	margin:auto;
+	margin-top:15px;
+}
+
+.middle {
+	width : 1020px;
+	height: 582px;
+	padding : 7px;
+	position: absolute;
+	margin-left: 170px;
+}
+
+.cluster {
+	width: 100%;
+	margin : auto;
+}
+
+.right {
+	width : 140px;
+	height: 420px;
+	align-content: center;
+	position: absolute;
+	margin-left: 1230px;
+}
+
+.book {
+	height: 100px;
+	display: block;
+	margin:auto;
+	margin-top:10px;
+}
+
+.serviette {
+	height: 70px;
+	display: block;
+	margin:auto;
+	margin-top:5px;
+}
+
+.wall {
+	width : 100px;
+	height: 70px;
+	display: block;
+	border-radius: 0px;
+	background-image: url(ressources/brick.jpg);
+	box-shadow : unset ;
+	margin:auto;
+	margin-top:5px;
+}
+
+.box {
+	background-color: #A8FB96;
+	width : 520px;
+	height : 175px;
+
+	position: absolute;
+	padding-top: 16px;
+	margin-left : -75px;
+	margin-top: 519px;
+	font-size: large;
+}
+
+p {
+	margin : 5px;
+	font-family: sans-serif;
+}
+
+.blood_shadow {
+	text-shadow: 3px 3px 3px red;
+}
+
+#reponse  {
+	width: 75%;
+	margin : 5px;
+}
+
+#bouton {
+	border-radius : 1px;
+	margin : 5px;
+	font-family: sans-serif;
+}
+
+#entrez {
+	font-size: xx-large;
+	font-family: serif;
+}
+
+.area {
+	border: 5px solid black;
+}
