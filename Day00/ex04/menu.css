@@ -34,12 +34,6 @@ nav li {
 	display: none;
 }
 
-nav > ul > li {
-	padding: 20px 30px;
-	color: green;
-}
-
-
 nav a{
 	display: inline-block;
 	text-decoration: none;
@@ -58,3 +52,64 @@ nav li:hover .submenu {
 	padding: 0px;
 	z-index: 1000000;
 }
+
+.submenu li {
+	border-bottom : 1px solid #CCC;
+}
+
+.submenu li a {
+	padding : 15px 30px;
+	font-size : 13px;
+	color : #222538;
+	width : 100px;
+}
+
+.subsubmenu {
+	display:none;
+}
+
+.submenu > ul::after {
+	content: "";
+	display: block;
+	clear:both;
+}
+
+nav .submenu:hover .subsubmenu {
+	display: inline-block;
+	position: relative;
+	top : 100%;
+	left : 150px;
+	padding: 0px;
+	z-index: 1000000;
+}
+
+.sub3menu {
+	display:none;
+}
+
+nav .subsubmenu:hover .sub3menu {
+	display: inline-block;
+	position: relative;
+	top : 100%;
+	left : 150px;
+	padding: 0px;
+	z-index: 1000000;
+}
+
+nav li:hover .subsubmenu {
+	display: inline-block;
+	position: absolute;
+	top : 100%;
+	left : 200px;
+	padding: 0px;
+	z-index: 1000000;
+}
+
+nav li:hover .sub3menu {
+	display: inline-block;
+	position: absolute;
+	top : 100%;
+	left : 300px;
+	padding: 00px;
+	z-index: 1000000;
+} 
