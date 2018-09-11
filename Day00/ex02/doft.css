@@ -115,6 +115,24 @@ div {
 	margin : auto;
 }
 
+.chair {
+    width: 154px;
+    height: 201px;
+    position: absolute;
+    left: 572px;
+	bottom: 16px;
+	opacity: 0;
+}
+
+.screen {
+    width: 191px;
+    height: 131px;
+    position: absolute;
+    left: 812px;
+    bottom: 127px;
+    opacity: 0;
+}
+
 .right {
 	width : 140px;
 	height: 420px;

@@ -1,51 +1,34 @@
 
-nav > ul {
-	margin :0px;
-	padding :0px
+body {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin:0px;
+	padding:0px;
 }
 
-nav > ul > li {
-	float:left;
+div {
+	width:100%;
+	background-color:#424558;
+}
+
+ div > ul {
+		margin:0px;
+		padding:0px;
+}
+
+div > ul > li {
+	float: left;
 	position: relative;
 }
 
-nav li {
+div li {
 	list-style-type: none;
 }
 
 .submenu {
-	display :none;
+	display: none;
 }
 
-li:hover .submenu {
-	display: inline-block;
-	position: absolute;
-	top :100%;
-	left :0px;
-	padding :0px;
-	z-index:100000;
-}
-
-ul::after {
-	content: "";
-	display :block;
-	clear :both;
-}
-
-
-
-.submenu li {
-	border-bottom: 1px solid #ccc;
-}
-
-.submenu li {
-	padding: 15px 30px;
-	font-size :13px;
-	color:yellow;
-	width:270px;
-}
-
-.niveau_un:hover{
-	border-top: 5px solid red;
-	background-color:pink;
+div > ul > li {
+	padding: 20px 30px;
+	color: green;
 }
