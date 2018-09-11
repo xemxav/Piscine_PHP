@@ -1,2 +1,0 @@
-mettre la taille des font en em
-https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1605329-formatage-du-texte
