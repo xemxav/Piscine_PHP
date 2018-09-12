@@ -3,6 +3,8 @@
 echo "Entrez un nombre: ";
 while (fscanf(STDIN, "%s", $number))
 {
+	if ((feof(STDIN)) == TRUE)
+		break ;
 	if (is_numeric($number))
 	{
 		echo "Le chiffre ";
@@ -15,7 +17,6 @@ while (fscanf(STDIN, "%s", $number))
 	{
 		echo "'$number'"." n'est pas un chiffre\n";
 	}
-	if ((feof(STDIN)) == TRUE)
-		break ;
+	$number = NULL;
 	echo "Entrez un nombre: ";
 }

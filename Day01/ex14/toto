@@ -1,0 +1,11 @@
+if moyenne
+
+
+ajouter toutes les notes dans une tab, puis calcule combien il y en a puis les ajoute puis affiche le resutlta
+if moyenne_user
+creer tab user=>note, si la clé exite ajouter la valeur $tab[user] += val; et complet un tab[user] = nb de note;
+crée un tab[user] = val/nb de note;
+trie ce tableau en fonction des key
+affiche
+if ecart moulinette
+meme chose mais avec valeur de l'ecart; 

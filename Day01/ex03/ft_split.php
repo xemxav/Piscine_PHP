@@ -1,6 +1,5 @@
 #!/usr/bin/php
 <?php
-
 function ft_split($string)
 {
 	$exploded = explode(" ", $string);
@@ -16,3 +15,4 @@ function ft_split($string)
 	sort($tab);
 	return $tab;
 }
+?>

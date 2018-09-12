@@ -15,6 +15,8 @@ function ft_epur($string)
 	}
 	return $tab;
 }
+if ($argc < 2)
+	exit();
 $tab = ft_epur($argv[1]);
 $string = implode(" ", $tab);
 echo $string."\n";
