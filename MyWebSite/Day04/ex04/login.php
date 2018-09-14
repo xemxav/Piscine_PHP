@@ -9,27 +9,24 @@ function my_isset($global, $string)
 	return false;
 }
 
-iframe()
-{
-	<html>
-		<body>
-			<iframe id = "mon_iframe" title ="frame" width="550px" src="char.php">
-			</iframe>
-		</body>
-	</html>
-}
 
-if (my_isset($_POST, 'login') && my_isset($_POST, 'passwd'))
+if (!(my_isset($_POST, 'login') && my_isset($_POST, 'passwd')))
+	return (echo "ERROR\n");
+else
 {
-	if (auth($_POST['login'], $_POST['passwd']))
+	if (!(auth($_POST['login'], $_POST['passwd'])))
 	{
-		$_SESSION['loggued_on_user'] = $_POST['login'];
-		iframe();
+		$_SESSION['loggued_on_user']= '';
+		return echo "ERROR\n";
 	}
 	else
 	{	
-		$_SESSION['loggued_on_user']= '';
-		echo "ERROR\n";
+		$_SESSION['loggued_on_user'] = $_POST['login'];}}?>
+		<iframe name="chat" src="chat.php" width="100%" height="550px"></iframe>
+		<iframe name="speak" src="speak.php" width="100%" height="50px"></iframe>
+		<?php
 	}
 }
+
 ?>
+
