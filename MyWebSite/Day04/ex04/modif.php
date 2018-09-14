@@ -29,6 +29,7 @@ if (my_isset($_POST,'login') && my_isset($_POST,'oldpw') && my_isset($_POST,'new
 			{
 				file_put_contents('../private/passwd', serialize($db));
 				echo "OK\n";
+				header('Location: index.html?modif=OK');
 			}
 			else
 				echo "ERROR\n";

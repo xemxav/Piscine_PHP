@@ -1,0 +1,12 @@
+rm /Users/xmoreau/Piscine_PHP/MyWebSite/Day04/private/passwd ;
+echo "suppression passwd\n";
+curl -d login=toto -d passwd=titi -d submit=OK 'http://localhost:8008/Day04/ex01/create.php';
+echo "create\n";
+curl -c cook.txt 'http://localhost:8008/Day04/ex03/login.php?login=toto&passwd=tit';
+echo "login\n";
+curl -b cook.txt 'http://localhost:8008/Day04/ex03/whoami.php';
+echo "whoami\n";
+curl -b cook.txt 'http://localhost:8008/Day04/ex03/logout.php';
+echo "LOGOUT\n";
+curl -b cook.txt 'http://localhost:8008/Day04/ex03/whoami.php';
+echo "whoami 2\n";

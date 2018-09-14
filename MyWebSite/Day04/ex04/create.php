@@ -7,6 +7,7 @@ function err()
 function succes()
 {
 	echo "OK\n";
+	header('Location: index.html?create=OK');
 }
 
 function my_isset($global, $string)
