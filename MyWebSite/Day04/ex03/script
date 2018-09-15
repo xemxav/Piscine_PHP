@@ -1,3 +1,4 @@
+
 rm /Users/xmoreau/Piscine_PHP/MyWebSite/Day04/private/passwd ;
 echo "suppression passwd\n";
 curl -d login=toto -d passwd=titi -d submit=OK 'http://localhost:8008/Day04/ex01/create.php';

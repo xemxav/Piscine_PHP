@@ -1,16 +1,7 @@
 <?php
-
-function my_isset($global, $string)
+if (isset($_POST['login']) && isset($_POST['oldpw']) && isset($_POST['newpw']) && isset($_POST['submit']))
 {
-	foreach($global as $k => $v)
-		if ($k == $string)
-			return true;
-	return false;
-}
-
-if (my_isset($_POST,'login') && my_isset($_POST,'oldpw') && my_isset($_POST,'newpw') && my_isset($_POST,'submit'))
-{
-	if ($_POST['submit'] == 'OK')
+	if ($_POST['submit'] == 'OK' && $_POST['newpw'] != '' && $_POST['oldpw'] != '')
 	{
 		$db = unserialize(file_get_contents('../private/passwd'));
 		if ($db)

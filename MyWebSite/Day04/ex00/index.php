@@ -1,13 +1,6 @@
 <?php
 session_start();
-function my_isset($global, $string)
-{
-	foreach($global as $k => $v)
-		if ($k == $string)
-			return true;
-	return false;
-}
-if (my_isset($_GET,'login') && my_isset($_GET,'passwd') && my_isset($_GET,'submit'))
+if (isset($_GET['login']) && isset($_GET['passwd']) && isset($_GET['submit']))
 {
 	
 	if ($_GET["submit"]=='OK')
@@ -28,8 +21,8 @@ if (my_isset($_GET,'login') && my_isset($_GET,'passwd') && my_isset($_GET,'submi
 	</head>
 	<body>
 		<form method="GET">
-			Identifiant: <input type="text" name="login" value="<?php if(my_isset($_SESSION, 'login')){ echo $_SESSION['login'];} ?>"/><br />
-			Mot de passe: <input type="password" name="passwd" value="<?php if (my_isset($_SESSION, 'passwd')){ echo $_SESSION['passwd'];}?>" />
+			Identifiant: <input type="text" name="login" value="<?php if(isset($_SESSION['login'])){ echo $_SESSION['login'];} ?>"/><br />
+			Mot de passe: <input type="password" name="passwd" value="<?php if (isset($_SESSION['passwd'])){ echo $_SESSION['passwd'];}?>" />
 			<input type="submit" name="submit" value="OK"/>
 		</form> 
 	</body>

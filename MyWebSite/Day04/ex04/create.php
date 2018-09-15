@@ -2,20 +2,13 @@
 function err()
 {
 	echo "ERROR\n";
+	exit;
 }
 
 function succes()
 {
 	echo "OK\n";
-	header('Location: index.html?create=OK');
-}
-
-function my_isset($global, $string)
-{
-	foreach($global as $k => $v)
-		if ($k == $string)
-			return true;
-	return false;
+	header('Location: ./index.html?create=OK');
 }
 
 function create_db()
@@ -52,7 +45,7 @@ function create_user($db, $user, $passwd)
 	succes();	
 }
 
-if (my_isset($_POST,'login') && my_isset($_POST,'passwd') && my_isset($_POST,'submit'))
+if (isset($_POST['login']) && isset($_POST['passwd']) && isset($_POST['submit']))
 {
 	if ($_POST['submit'] == 'OK')
 	{

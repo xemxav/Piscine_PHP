@@ -9,14 +9,6 @@ function succes()
 	echo "OK\n";
 }
 
-function my_isset($global, $string)
-{
-	foreach($global as $k => $v)
-		if ($k == $string)
-			return true;
-	return false;
-}
-
 function create_db()
 {
 	if (!(mkdir('../private')))
@@ -51,9 +43,9 @@ function create_user($db, $user, $passwd)
 	succes();	
 }
 
-if (my_isset($_POST,'login') && my_isset($_POST,'passwd') && my_isset($_POST,'submit'))
+if (isset($_POST['login']) && isset($_POST['passwd']) && isset($_POST['submit']))
 {
-	if ($_POST['submit'] == 'OK')
+	if ($_POST['submit'] == 'OK' && $_POST['login'] != '' && $_POST['passwd'] != '' )
 	{
 		if(!(file_exists('../private/')))
 			create_db();
