@@ -1,12 +1,12 @@
 #!/usr/bin/bash
 echo "test1\n"
-curl -v -c cook.txt 'http://localhost:8008/Day04/ex00/index.php';
+curl -v -c cook.txt 'http://localhost:8008/d04/ex00/index.php';
 echo "\n\n\n"
 echo "test2 on soumet\n"
-curl -v -b cook.txt 'http://localhost:8008/Day04/ex00/index.php?login=sb&passwd=beeone&submit=OK';
+curl -v -b cook.txt 'http://localhost:8008/d04/ex00/index.php?login=sb&passwd=beeone&submit=OK';
 echo "\n\n\n"
 echo "test3 on recharge sans passer les valeurs\n"
-curl -v -b cook.txt 'http://localhost:8008/Day04/ex00/index.php';
+curl -v -b cook.txt 'http://localhost:8008/d04/ex00/index.php';
 echo "\n\n\n"
 echo "test4 on enleve le cookie\n"
-curl -v 'http://localhost:8008/Day04/ex00/index.php';
+curl -v 'http://localhost:8008/d04/ex00/index.php';

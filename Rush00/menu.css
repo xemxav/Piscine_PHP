@@ -1,0 +1,229 @@
+body{
+    background-image: url("https://besthqwallpapers.com/Uploads/23-3-2018/45388/thumb2-isometric-mountains-4k-creative-3d-landscapes-polygons.jpg");
+    background-color: #6772c9;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+}
+
+.divblanche > .imgproduct{
+    width: 25%;
+    height: auto;
+}
+
+.divblanche{
+    width: 80%;
+    background-color: #ffffffb8;
+}
+
+.logo{
+    width: 70%;
+    height: auto;
+}
+
+.titre {
+    background-color: rgb(95, 90, 90);
+    border-radius: 10px;
+    width: 100%;
+    height: 7%;
+    margin-bottom: 2%;
+}
+
+.phrase{
+    background-color: rgb(95, 90, 90);
+    border-radius: 10px;
+    width: 100%;
+    height: 5%;
+    margin-bottom: 2%;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 4vw;
+    color: black;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2vw;
+}
+
+nav{
+    width: 100%;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+nav > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav > ul{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+nav > ul > li {
+    float: left;
+    margin: 2px;
+    position: relative;
+    width: 10%;
+    font-size: 1vw;
+}
+
+.acthome{
+    float: right;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+.submenu {
+    display: none;
+    width: 100%;
+}
+.subsubmenu {
+    display: none;
+    width: 100%;
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav > ul > li >a {
+    padding: 20px;
+    color: #FFF;
+}
+
+nav li:hover .submenu{
+    display: inline-block;
+    border-radius: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 10000;
+}
+
+nav > ul > li >ul >li:hover .subsubmenu{
+    display: inline-block;
+    border-radius: 10px;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    padding: 0px;
+    z-index: 10000;
+}
+
+.subsubmenu li{
+    border-bottom: 1px solid #CCC;
+    width: 100%;
+}
+
+.submenu li{
+    border-bottom: 1px solid #CCC;
+    width: 100%;
+}
+
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color:#222538;
+    width: 100%;
+}
+
+.subsubmenu li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color:#222538;
+    width: 100%;
+}
+
+nav > ul > li:hover a{
+    padding: 20px;
+}
+
+.classic:hover{
+    border-top: 5px solid salmon;
+    background-color: rgb(110, 67, 62);
+}
+
+.classic .submenu{
+    background-color: rgb(136, 109, 106);
+}
+.classic .subsubmenu{
+    background-color: rgb(136, 109, 106);
+}
+
+.classic .submenu li:hover{
+    background-color: rgb(143, 86, 79);
+}
+.classic .subsubmenu li:hover{
+    background-color: rgb(143, 86, 79);
+}
+
+.race:hover{
+    border-top: 5px solid rgb(0, 26, 255);
+    background-color: rgb(22, 36, 163);
+}
+
+.race .submenu{
+    background-color: rgb(90, 91, 161);
+}
+
+.race .submenu li:hover{
+    background-color: rgb(91, 73, 155);
+}
+
+.freestyle:hover{
+    border-top: 5px solid rgb(9, 255, 0);
+    background-color: rgb(50, 163, 22);
+}
+
+.freestyle .submenu{
+    background-color: rgb(96, 161, 90);
+}
+
+.freestyle .submenu li:hover{
+    background-color: rgb(73, 155, 77);
+}
+
+.freeride:hover{
+    border-top: 5px solid rgb(255, 0, 179);
+    background-color: rgb(158, 22, 163);
+}
+
+.freeride .submenu{
+    background-color: rgb(155, 90, 161);
+}
+
+.freeride .submenu li:hover{
+    background-color: rgb(145, 73, 155);
+}
+.allarround:hover{
+    border-top: 5px solid rgb(44, 2, 32);
+    background-color: rgb(87, 22, 87);
+}
+
+.allarround .submenu{
+    background-color: rgb(94, 63, 97);
+}
+
+.allarround .submenu li:hover{
+    background-color: rgb(125, 19, 139);
+}
+
+.divblanche > div > form > p > input{
+    padding:3px;
+    border:1px solid #F5C5C5;
+    border-radius:5px;
+    width:200px;
+    box-shadow:1px 1px 2px #C0C0C0 inset;
+    }
