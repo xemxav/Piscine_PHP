@@ -1,0 +1,1 @@
+CREATE TABLE `db_xmoreau`.`ft_table` ( `id` INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT , `login` VARCHAR(7) NOT NULL DEFAULT 'toto' , `group` ENUM('staff','student','other','') NOT NULL , `creation_date` DATE NOT NULL );
