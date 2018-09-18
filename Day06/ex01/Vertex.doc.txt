@@ -1,0 +1,16 @@
+
+<- Vertex ----------------------------------------------------------------------
+The Vertex class handles Vertex coordinates ans works with the Color Class to specify a color to a vertex.
+
+An instance can be contructed by giving spatial coordinates. x, y & z are madatory.
+
+new Vertex( array( 'x' => 10, y => 10, z => 10));
+
+You can add a 'w' value and/or a color instance created from the Color Class by doing
+
+new Vertex( array( 'x' => 10, 'y' => 10, 'z' => 10, 'w' => 10, 'color' => $green));
+
+($green = new Color (array('rgb' => 0x00FF00)));
+
+The class doesnt provide any method exept __tostring and doc ()
+---------------------------------------------------------------------- Vertex ->

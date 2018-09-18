@@ -8,10 +8,10 @@
 /* ************************************************************************** */
 
 
-require_once 'Color.class.php';
+require_once '../ex00/Color.class.php';
 require_once 'Vertex.class.php';
 
-Color::$verbose = False;
+Color::$verbose = false;
 
 print( Vertex::doc() );
 Vertex::$verbose = True;

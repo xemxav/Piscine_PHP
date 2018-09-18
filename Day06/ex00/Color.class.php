@@ -32,7 +32,7 @@ Class Color {
 	}
 
 	static function doc () {
-		echo file_get_contents('./Color.doc.txt').PHP_EOL;
+		echo file_get_contents('Color.doc.txt').PHP_EOL;
 	}
 
 	function __destruct() {
@@ -42,7 +42,7 @@ Class Color {
 		return ;
 	}
 
-	function __tostring () {
+	function __toString () {
 		 return sprintf('Color( red: %3d, green: %3d, blue :%3d)', $this->red, $this->green, $this->blue);
 	}
 
