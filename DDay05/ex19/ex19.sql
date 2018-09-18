@@ -1,0 +1,1 @@
+SELECT DATEDIFF(max(last_projection), min(last_projection)) FROM film;
