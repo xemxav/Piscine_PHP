@@ -45,10 +45,8 @@ Class Vertex {
 				$this->_w = $kwargs['w']; 
 			if (array_key_exists('color', $kwargs))
 			{	
+				if ($kwargs['color'] instanceof Color)
 				$this->_color = $kwargs['color'];
-				// $this->_color->red = $kwargs['color']->red;
-				// $this->_color->green = $kwargs['color']->green;
-				// $this->_color->blue = $kwargs['color']->blue;
 			}
 			else
 				$this->_color = new Color (array('rgb' => 0xFFFFFF)) ;
@@ -64,7 +62,9 @@ Class Vertex {
 
    function __destruct() {
 		if (self::$verbose)
-		printf("Vertex( x: %.2f, y: %.2f, z:%.2f, w:%.2f, Color( red: %3d, green: %3d, blue: %3d ) ) destructed".PHP_EOL, $this->_x, $this->_y, $this->_z, $this->_w, $this->_color->red, $this->_color->green, $this->_color->blue);
+		{
+			printf("Vertex( x: %.2f, y: %.2f, z:%.2f, w:%.2f, Color( red: %3d, green: %3d, blue: %3d ) ) destructed".PHP_EOL, $this->_x, $this->_y, $this->_z, $this->_w, $this->_color->red, $this->_color->green, $this->_color->blue);
+		}
 	}
 }
 

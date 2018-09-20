@@ -1,0 +1,46 @@
+
+Pour creer une classe fille :
+
+class fille extends mere {
+	__construct()
+		parent:: -> sera executé avant
+	__destruct()
+
+}
+
+##Classe abstraites : 
+
+interdire d'instancier une classe quand on declare la classe : abstract class nom_classe {}
+on ne peut l'utiliser que dans une relation d'heritage
+
+##Methodes abstraites :
+
+que dans une class abstraites.
+on ne peut pas ne pas la definir dans une classe heritée
+
+abstract class Exemple {
+	abstract public function foo(); //-> une sorte de prototype
+}
+va obliger la methode fille a redefinir cette methode, une sorte de contrat.
+
+va permettre de contenir un ensemble de methode que les classes filles vont devoir respecter
+c'est une interface -> obliger un comportement.
+
+##interface :
+Est ce que ma classe fille est une classe mere ? si oui je peux faire de l'heritage.
+vocabulaire different
+une classe implemente une interface (class abstraite avec que des methodes abstraites).
+on remplace class par interface :
+
+interface IExplemple { //-> pas besoin de mettre abstract class
+	function foo(); //->pas besoin de mettre abstract
+}
+codifie des methodes a implementer.
+
+pour utiliser un interface comme parent :
+
+class Ezemple implements IExemple {
+	...
+
+	public function foo();
+}
