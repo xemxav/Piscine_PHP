@@ -1,4 +1,5 @@
 <?php
+
 Class Vertex {
 
 	private $_x = 0;
@@ -7,7 +8,7 @@ Class Vertex {
 	private $_w = 1.0;
 	private $_color;
 
-	public static $verbose = false;
+	static $verbose = false;
 
 	//faire les setteur et geteur
 	

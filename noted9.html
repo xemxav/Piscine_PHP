@@ -1,0 +1,72 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Notes Javasript</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+	<script src="test.js"></script> alert('test'); > code JS dans test.js.
+</head>
+<body>
+	Methode inline :
+	<span onclick="alert('test');">hello world</span> onclick est un attribut js, c'est la methode inline.
+	
+	a la fin du body pour la rapidité.
+	<script>
+		alert('test');
+		console.log('hello world'); -> permet de voir dans la console du navigateur ce qu'a fait le code.
+		var nom_variable; -> declaration 
+		nom_variable = 42;
+		console.debug(42);
+
+		function my_func() { -> declaration fonction
+			var toto;
+
+			toto = 'bonjour';
+		}
+		my_func(); -> appel de la fonction 
+		console.debug(toto);
+
+		var tab = new Array('tomate', 'salade', ...) -> tout est object dans JS donc a chaque fois on declare avec new;
+		for(t in tab) {
+			t represente la clé de la table
+			console.log(t); -> affiche les index;
+			console.log(tab[t]) -> affiche les valeurs du tab
+		}
+	</script>
+</body>
+</html>
+
+LE DOM est le document object model. (voir W3school)
+un arbre en fonctiond des balises.
+avec le JS on peut naviguer dans cette arbre.
+
+se balader dans le dom :
+var my_element = document.getElementById('un id dans une balise'); -> on va pouvoir recuperer un element grace a son id
+avec ma variable je peux acceder a d'autres choses.
+my_element.getAttribute('id') = id passée avant.
+
+var new_element = document.createElement('span'); on crée un nouvel element
+new_element.setAttribute('style', 'background : red;'); -> on ajoute un attribut
+var_text = document.createTextNode('hello world'); -> besoin de creer un object texte;
+new_element.appendChild(var_texte);
+my_element.appendChild(new_element);
+
+Pour supprimer il faut partir du parent
+my_element.removeChild(new_element);
+
+
+Jquery et Ajax->asynchronous javascript
+
+jquery -> librairie qui surcouche le javascript
+
+$(document).ready(function(){ ->permet de lancer le script une fois que le dom est chargé.
+
+}) -> 
+
+on utilise le meme nom qu'en css
+$('#my_id').click(function anonyme)
+
+$.get -> declenche une requete asynchrone et va interoger le serveur en methode get
+$.get('test.php', function(data,success))

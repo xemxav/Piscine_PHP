@@ -1,4 +1,51 @@
 
 <- Vector ----------------------------------------------------------------------
-Your documentation here.
+The Vector class enables you to create Vectors.
+
+It contructs itself with an array of two vertex from Class Vertex :
+orig and dest such as:
+
+$dest = new Vertex(array('x' => x, 'y' => y, 'z' => z));
+$orig = new Vertex(array('x' => x, 'y' => y, 'z' => z));
+
+$newVector = new Vector(array('dest' = > $dest, 'orig' => $orig));
+
+Whereas $dest is mandatory, $orig will be defaulted at (0,0,0) if not provided.
+
+The class provides a __toString method.
+
+The Vector class provides the following attributs :
+	private $_x = 0;
+	private $_y = 0;
+	private $_z = 0;
+	private $_w = 0;
+	static $verbose = false;
+
+the private attributs have the proper get method such as 
+	getX()
+	getY()
+	getZ()
+	getW()
+
+The Vector class provides the following methods :
+
+float magnitude() : returns the magnitude of the vecto
+
+Vector normalize() : returns the normalized vector, if already normalized
+					it returns a fresh copy.
+
+Vector add( Vector $rhs ) : returns the sum of the two vectors;
+
+Vector sub( Vector $rhs ) : returns the substraction of the two vectors;
+
+Vector opposite() : returns the opposite vector;
+
+Vector scalarProduct( $k ) : returns the scalar product with the scalar $k;
+
+float dotProduct( Vector $rhs ) : returns the dot product of the two vectors.
+
+float cos( Vector $rhs ) : returns the cosinus of the angle between the 
+							two vectors.
+
+Vector crossProduct( Vector $rhs ) : returns the cross product of the two vectors.
 ---------------------------------------------------------------------- Vector ->

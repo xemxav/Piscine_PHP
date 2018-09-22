@@ -7,9 +7,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
-require_once 'Vertex.class.php';
-require_once 'Vector.class.php';
+require_once '../ex00/Color.class.php';
+require_once '../ex01/Vertex.class.php';
+require_once '../ex02/Vector.class.php';
 require_once 'Matrix.class.php';
 
 
@@ -61,12 +61,12 @@ print( 'Please note the reverse operations order. It\'s not an error.' . PHP_EOL
 $M = $T->mult( $RX )->mult( $RY )->mult( $S );
 print( $M . PHP_EOL . PHP_EOL );
 
-print( 'What can you do with a matrix and a vertex ?' . PHP_EOL );
-$vtxA = new Vertex( array( 'x' => 1.0, 'y' => 1.0, 'z' => 0.0 ) );
-print( $vtxA . PHP_EOL );
-print( $M . PHP_EOL );
-print( 'Transform the damn vertex !' . PHP_EOL );
-$vtxB = $M->transformVertex( $vtxA );
-print( $vtxB . PHP_EOL . PHP_EOL );
+// print( 'What can you do with a matrix and a vertex ?' . PHP_EOL );
+// $vtxA = new Vertex( array( 'x' => 1.0, 'y' => 1.0, 'z' => 0.0 ) );
+// print( $vtxA . PHP_EOL );
+// print( $M . PHP_EOL );
+// print( 'Transform the damn vertex !' . PHP_EOL );
+// $vtxB = $M->transformVertex( $vtxA );
+// print( $vtxB . PHP_EOL . PHP_EOL );
 
 ?>
